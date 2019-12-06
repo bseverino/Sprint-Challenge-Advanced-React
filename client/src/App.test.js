@@ -9,17 +9,12 @@ test('App renders without crashing', () => {
   rtl.render(<App />);
 });
 
-test('Toggle button is found', async () => {
+test('Toggle button is found', () => {
   const { getByTestId } = rtl.render(<App />);
-  await getByTestId(/toggle-button/i);
+  getByTestId(/toggle-button/i);
 });
 
-test('Player list is found', async () => {
+test('Player list is found', () => {
   const { getByTestId } = rtl.render(<App />);
-  await getByTestId(/player-list/i);
+  getByTestId(/player-list/i);
 });
-
-// test('Player cards are found', async () => {
-//   const { getAllByLabelText } = rtl.render(<App />);
-//   await getAllByLabelText(/player-card/i);
-// });
