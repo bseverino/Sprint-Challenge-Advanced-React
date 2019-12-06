@@ -12,10 +12,10 @@ function PlayerList(props) {
 
     return (
         <div>
-            <button onClick={toggleMode}>
+            <button  data-testid="toggle-button" className='toggle' onClick={toggleMode}>
                 {darkMode ? '🌞' : '🌚'}
             </button>
-            <div className='card-container'>
+            <div  data-testid="player-list" className='card-container'>
                 {props.players.map(player => (
                     <PlayerCard key={player.id} player={player} />
                 ))}

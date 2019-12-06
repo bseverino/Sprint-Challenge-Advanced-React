@@ -8,9 +8,20 @@
     background: #313843;
 }
 
+.toggle {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    position: fixed;
+}
+
+.toggle:hover {
+    cursor: pointer;
+}
+
 .card-container {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
