@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+.dark-mode {
+    color: #fff;
+    background: #313843;
+}
+
 .card-container {
     width: 80%;
     margin: 0 auto;
